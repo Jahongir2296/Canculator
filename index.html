@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/stayle.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="calculator">
+        <header class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="navbar-left">
+                        <img src="./img/png-clipart-round-multicolored-logo-vanamo-logo-icons-logos-emojis-tech-companies.png" width="20" height="20" alt="logo">
+                        <p>Simple calculator</p>
+                    </div>
+                    <div class="navbar-right">
+                        <i class='bx bx-minus'></i>
+                        <i class='bx bx-rectangle'></i>
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <form action="" class="simpl-calculator" name="calc">
+                <input class="show" id="result" type="text" name="txt" placeholder="0" readonly>
+                <div class="buttons">
+                    <div class="btn" id="seven" onclick="dataValue( '7')">7</div>
+                    <div class=" btn " id="eight " onclick="dataValue( '8')">8</div>
+                    <div class="btn " id="nine " onclick="dataValue( '9')">9</div>
+                    <div class="btn " id="be " onclick="dataValue( '/')">/</div>
+                </div>
+                <div class="buttons ">
+                    <div class="btn " id="four " onclick="dataValue( '4')">4</div>
+                    <div class="btn " id="five " onclick="dataValue( '5')">5</div>
+                    <div class="btn " id="six " onclick="dataValue( '6')">6</div>
+                    <div class="btn " id="reproduction " onclick="dataValue( '*')">*</div>
+                </div>
+                <div class="buttons ">
+                    <div class="btn " id="one " onclick="dataValue( '1')">1</div>
+                    <div class="btn " id="two " onclick="dataValue( '2')">2</div>
+                    <div class="btn " id="three " onclick="dataValue( '3')">3</div>
+                    <div class="btn " id="minus " onclick="dataValue( '-')">-</div>
+                </div>
+                <div class="buttons ">
+                    <div class="btn " id="equal " onclick="solve()">=</div>
+                    <div class="btn " id="zero " onclick="dataValue( '0')">0</div>
+                    <div class=" btn " id="dot " onclick="dataValue( '.')">.</div>
+                    <div class="btn " id="plus " onclick="dataValue( '+')">+</div>
+                </div>
+                <div class="buttons ">
+                    <div class=" btn-cencel " id="cleard " onclick="cleard()">CE</div>
+                    <div class=" btn-cencel " id="clear ">C</div>
+                </div>
+            </form>
+
+        </main>
+    </section>
+
+
+
+    <script src="./js/app.js "></script>
+</body>
+
+</html>
